@@ -6,6 +6,8 @@
 #include "Casilla.h"
 #include<iostream>
 #include "Vector2D.h"
+#include "ListaPeones.h"
+
 using namespace std;
 
 class Tablero
@@ -19,6 +21,9 @@ public:
 	Peon peon1, peon2;
 	Pared fondo;
 	Casilla casilla;
+private:
+	ListaPeones peones;
+public:
 
 
 	void tecla(unsigned char key);

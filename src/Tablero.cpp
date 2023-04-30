@@ -28,6 +28,8 @@ void Tablero::dibuja()
 	fondo.dibuja();
 	casilla.dibuja();
 
+	peones.dibuja();
+
 }
 
 void Tablero::mueve()
@@ -44,9 +46,17 @@ void Tablero::inicializa()
 	z_ojo = 16;
 
 
-	peon1.setPos(0, 2);
-	peon2.setPos(1, 1);
+	peon1.setPos(0, 1);
+	peon1.setColor(1, 0);
+	peon2.setPos(4, 1);
+	peon2.setColor(1, 0);
 
+	//for (int i = 0; i < 5; i++)
+	//{
+	//	Peon* aux = new Peon;
+	//	aux->setPos(i, 1);//agrega a la lista
+	//	peones.agregar(aux); 
+	//}
 	
 
 	fondo.setColor(100, 125, 16);

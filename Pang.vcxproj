@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Casilla.cpp" />
+    <ClCompile Include="src\ListaPeones.cpp" />
     <ClCompile Include="src\Peon.cpp" />
     <ClCompile Include="src\Pang.cpp" />
     <ClCompile Include="src\Pared.cpp" />
@@ -28,6 +29,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Casilla.h" />
+    <ClInclude Include="src\ListaPeones.h" />
     <ClInclude Include="src\Peon.h" />
     <ClInclude Include="src\ColorRGB.h" />
     <ClInclude Include="src\Pared.h" />

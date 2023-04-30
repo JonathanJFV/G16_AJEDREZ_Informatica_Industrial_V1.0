@@ -9,7 +9,7 @@ void Casilla::dibuja()
 				int suma = i + j;
 				if ((suma % 2) != 0) {
 					glBegin(GL_POLYGON);
-					glColor3ub(rojo, verde, azul);
+					glColor3ub(_rojo, _verde, _azul);
 					glVertex3d(i - 0.5 , j - 0.5, 0);
 					glVertex3d(i + 0.5, j - 0.5, 0);
 					glVertex3d(i + 0.5, j + 0.5 , 0);
@@ -20,7 +20,7 @@ void Casilla::dibuja()
 
 				if ((suma % 2) == 0) {
 					glBegin(GL_POLYGON);
-					glColor3ub(_rojo, _verde, _azul);
+					glColor3ub(rojo, verde, azul);
 					glVertex3d(i - 0.5, j - 0.5, 0);
 					glVertex3d(i + 0.5, j - 0.5, 0);
 					glVertex3d(i + 0.5, j + 0.5, 0);
