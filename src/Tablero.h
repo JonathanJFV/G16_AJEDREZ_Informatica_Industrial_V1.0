@@ -2,7 +2,7 @@
 #include "freeglut.h"
 #include <math.h>
 #include "Pared.h"
-#include"Esfera.h"
+#include"Peon.h"
 #include "Casilla.h"
 #include<iostream>
 #include "Vector2D.h"
@@ -16,7 +16,7 @@ public:
 	//Vector2D posCursor;
 	int cursor_x, cursor_y;
 
-	Esfera e1, e2, e3;
+	Peon peon1, peon2;
 	Pared fondo;
 	Casilla casilla;
 
