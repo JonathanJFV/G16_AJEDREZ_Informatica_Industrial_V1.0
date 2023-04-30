@@ -13,12 +13,11 @@ Esfera::Esfera(float rad, float x, float y, float vx, float vy)
 	radio = rad;
 	posicion.x = x;
 	posicion.y = y;
-	//velocidad.x = vx;
-	//velocidad.y = vy;
+	velocidad.x = vx;
+	velocidad.y = vy;
 
 	rojo = verde = 255;
 	azul = 100; //color distinto
-	//aceleracion.y = -9.8;
 }
 
 // funcion principal de dibujo de la Esfera
@@ -34,8 +33,8 @@ void Esfera::dibuja()
 // movimiento de las esferas
 void Esfera::mueve(float t)
 {
-	//posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
-	//velocidad = velocidad + aceleracion * t;
+	posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
+	velocidad = velocidad + aceleracion * t;
 }
 
 void Esfera::setColor(Byte r, Byte v, Byte a)
@@ -60,6 +59,6 @@ void Esfera::setPos(float _x, float _y)
 
 void Esfera::setVel(float _x, float _y)
 {
-	//velocidad.x = _x;
-	//velocidad.y = _y;
+	velocidad.x = _x;
+	velocidad.y = _y;
 }

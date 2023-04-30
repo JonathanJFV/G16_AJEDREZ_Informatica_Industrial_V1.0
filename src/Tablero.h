@@ -16,7 +16,7 @@ public:
 	//Vector2D posCursor;
 	int cursor_x, cursor_y;
 
-	Esfera e1, e2, e3;
+	Esfera e1, e2, e3, peon1, peon2;
 	Pared fondo;
 	Casilla casilla;
 
