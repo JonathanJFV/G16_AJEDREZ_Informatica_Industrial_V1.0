@@ -54,7 +54,7 @@ void Tablero::inicializa()
 	fondo.setColor(100, 125, 16);
 	fondo.setPos(-1, -1, 8, 8);
 
-	casilla.setColor(10, 10, 10, 255, 255, 255);
+	casilla.setColor(119, 79, 56, 230, 181, 126);
 }
 
 void Tablero::tecla(unsigned char key)

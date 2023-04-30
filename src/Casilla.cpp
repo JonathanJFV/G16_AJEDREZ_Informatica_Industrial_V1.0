@@ -36,6 +36,6 @@ void Casilla::dibuja()
 void Casilla::setColor(BYTE r, BYTE v, BYTE a, BYTE _r, BYTE _v, BYTE _a)
 {
 	rojo = r;	 _rojo = _r;
-	verde = _v;  _verde = v;
+	verde = v;  _verde = _v;
 	azul = a;	 _azul = _a;
 }
