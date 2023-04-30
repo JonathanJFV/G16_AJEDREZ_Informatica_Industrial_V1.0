@@ -45,9 +45,8 @@ void Tablero::inicializa()
 
 
 	peon1.setPos(0, 2);
-	peon1.setRadio(0.5);
 	peon2.setPos(1, 1);
-	peon2.setRadio(0.5);
+
 	
 
 	fondo.setColor(100, 125, 16);

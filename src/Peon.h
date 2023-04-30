@@ -7,9 +7,9 @@ class Peon
 public:
 
 	Peon();
-	Peon(float rad, float x=0.0f, float y=0.0f,
-		   float vx=0.0f, float vy=0.0f);
+	Peon(float rad, float x, float y, float vx, float vy);
 
+	
 	//virtual ~Esfera();
 
 	void dibuja(); // funcion principal de dibujo de la Esfera

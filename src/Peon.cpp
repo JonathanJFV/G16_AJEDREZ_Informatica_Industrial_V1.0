@@ -1,12 +1,13 @@
 #include "Peon.h"
 #include"freeglut.h"
+#include "ETSIDI.h"
 
 Peon::Peon()
 {
 	rojo = verde = azul = 255; //blanco
-	radio = 1.0f;
-	//aceleracion.y = -9.8f;
+	radio = 0.4f;
 }
+
 
 Peon::Peon(float rad, float x, float y, float vx, float vy)
 {
@@ -23,6 +24,20 @@ Peon::Peon(float rad, float x, float y, float vx, float vy)
 // funcion principal de dibujo de la Esfera
 void Peon::dibuja()
 {
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/Peon_Blanco.png").id);
+	glDisable(GL_LIGHTING);
+	glBegin(GL_POLYGON);
+	glColor3f(1, 1, 1);
+	glTexCoord2d(0, 1); glVertex2f(posicion.x - 0.5, posicion.y + 0.5);
+	glTexCoord2d( 1,  1); glVertex2f(posicion.x + 0.5, posicion.y + 0.5);
+	glTexCoord2d(  1, 0); glVertex2f(posicion.x + 0.5, posicion.y-0.5);
+	glTexCoord2d(0, 0); glVertex2f(posicion.x-0.5, posicion.y-0.5);
+	glEnd();
+	glEnable(GL_LIGHTING);
+	glDisable(GL_TEXTURE_2D);
+
+
 	glColor3ub(rojo, verde, azul);
 	glTranslatef(posicion.x, posicion.y, 0);
 	glutSolidSphere(radio, 20, 20);
